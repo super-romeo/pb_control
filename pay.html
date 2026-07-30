@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оплата проверки паспорта безопасности — ПБ-Контроль</title>
+<meta name="description" content="Порядок оплаты экспресс-проверки паспорта безопасности химической продукции.">
+<style>
+  :root{--ink:#1a2332;--acc:#0d6e5f;--acc2:#0a5748;--warn:#b7791f;--bg:#f7f8f9;--card:#ffffff;--mut:#5a6472;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{background:var(--card);border-bottom:1px solid #e3e6ea;padding:14px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .logo{font-weight:700;font-size:18px;color:var(--acc);text-decoration:none}
+  .logo span{color:var(--ink)}
+  .hero{padding:56px 0 40px}
+  h1{font-size:34px;line-height:1.25;margin-bottom:16px;max-width:760px}
+  .sub{font-size:19px;color:var(--mut);max-width:680px;margin-bottom:28px}
+  .cta{display:inline-block;background:var(--acc);color:#fff;font-size:18px;font-weight:600;padding:15px 32px;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+  .cta:hover{background:var(--acc2)}
+  .cta.ghost{background:#fff;color:var(--acc);border:2px solid var(--acc)}
+  .cta-note{font-size:14px;color:var(--mut);margin-top:10px}
+  .band{background:#fff7e8;border-left:4px solid var(--warn);padding:14px 18px;border-radius:6px;margin:34px 0;font-size:16px}
+  section{padding:34px 0}
+  h2{font-size:24px;margin-bottom:18px}
+  h3{font-size:18px;margin:22px 0 8px}
+  p+p{margin-top:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid #e3e6ea;border-radius:10px;padding:20px}
+  .card b{display:block;margin-bottom:6px;font-size:16px}
+  .card p{font-size:15px;color:var(--mut)}
+  ol.steps{list-style:none;counter-reset:s;max-width:640px}
+  ol.steps li{counter-increment:s;padding:12px 0 12px 52px;position:relative;font-size:16px}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:10px;width:36px;height:36px;border-radius:50%;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+  .price{font-size:17px;margin-top:8px}
+  .price b{color:var(--acc);font-size:22px}
+  .cmp{font-size:15px;color:var(--mut);margin-top:10px}
+  form{background:var(--card);border:1px solid #e3e6ea;border-radius:12px;padding:26px;max-width:560px}
+  form label{display:block;font-size:14px;font-weight:600;margin:14px 0 4px}
+  form input[type=text],form input[type=email],form textarea{width:100%;padding:11px;border:1px solid #c9ced6;border-radius:7px;font-size:15px}
+  .agree{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--mut);font-weight:400}
+  .agree input{margin-top:4px;width:16px;height:16px;flex:none}
+  .fine{font-size:12.5px;color:var(--mut);margin-top:12px}
+  .doc{background:var(--card);border:1px solid #e3e6ea;border-radius:12px;padding:26px 30px;font-size:15px}
+  .doc ul{margin:8px 0 8px 22px}
+  .doc li{margin:4px 0}
+  footer{padding:28px 0 40px;font-size:13px;color:var(--mut);border-top:1px solid #e3e6ea;margin-top:30px}
+  footer a{color:var(--mut)}
+</style>
+<!-- ЯНДЕКС.МЕТРИКА: вставить код счётчика вместо этой строки. Цели: cta_click, lead_submit, payment_click -->
+<!-- Прибор замера: конфиг аналитики и функция track(). Заполняется в smoke.js. -->
+<script src="smoke.js"></script>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><div style="font-size:14px;color:var(--mut)">Паспорта безопасности химической продукции</div></div></header>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Ссылку на оплату и договор пришлём в течение часа</h1>
+    <p class="sub">Проверка паспорта — 4 900 ₽. Данные карты на сайте мы не принимаем: счёт и ссылку на оплату вы получите письмом, оплатить можно картой или по реквизитам. Договор и чек — тем же письмом.</p>
+    <a class="cta" href="index.html#form">Оставить заявку на оплату</a>
+    <div class="cta-note">Заполните форму на главной — в ответном письме будет ссылка на оплату</div>
+  </div>
+  <section>
+    <h2>Что дальше</h2>
+    <ol class="steps">
+      <li>Вы оставляете заявку и присылаете паспорт ответным письмом.</li>
+      <li>Мы подтверждаем объём работы и отправляем ссылку на оплату 4 900 ₽ вместе с договором.</li>
+      <li>После оплаты отчёт по 16 разделам приходит в течение одного рабочего дня.</li>
+    </ol>
+    <p class="cmp">Если после проверки вы решите переоформлять паспорт у нас, стоимость проверки идёт в зачёт.</p>
+  </section>
+</div>
+<div class="wrap"><footer>
+  ПБ-Контроль &middot; Проверка и разработка паспортов безопасности химической продукции (ГОСТ 30333, ТР ЕАЭС 041/2017)<br>
+  {{ОПЕРАТОР}} &middot; ИНН {{ИНН}} &middot; {{АДРЕС}} &middot; <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
+  <a href="privacy.html">Политика обработки персональных данных</a>
+</footer></div>
+</body>
+</html>
