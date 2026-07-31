@@ -14,6 +14,10 @@
   header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
   .logo{font-weight:700;font-size:18px;color:var(--acc);text-decoration:none}
   .logo span{color:var(--ink)}
+  nav.top{display:flex;gap:20px;font-size:15px;flex-wrap:wrap}
+  nav.top a{color:var(--mut);text-decoration:none;padding:3px 0;border-bottom:2px solid transparent;white-space:nowrap}
+  nav.top a:hover{color:var(--acc)}
+  nav.top a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--acc)}
   .hero{padding:56px 0 40px}
   h1{font-size:34px;line-height:1.25;margin-bottom:16px;max-width:760px}
   .sub{font-size:19px;color:var(--mut);max-width:680px;margin-bottom:28px}
@@ -53,7 +57,7 @@
 <script src="smoke.js"></script>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><div style="font-size:14px;color:var(--mut)">Паспорта безопасности химической продукции</div></div></header>
+<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><nav class="top"><a href="./" class="on">Проверка паспорта</a><a href="new.html">Разработка паспорта</a></nav></div></header>
 <div class="wrap">
 
   <div class="hero">
