@@ -59,13 +59,13 @@
 <script src="smoke.js"></script>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><nav class="top"><a href="./">Проверка паспорта</a><a href="new.html">Разработка паспорта</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="./" onclick="track('click_logo_home')">ПБ<span>-Контроль</span></a><nav class="top"><a href="./" onclick="track('click_nav_check')">Проверка паспорта</a><a href="new.html" onclick="track('click_nav_new')">Разработка паспорта</a></nav></div></header>
 <div class="wrap">
 
   <div class="hero">
     <h1>Ссылку на оплату и договор пришлём в течение часа</h1>
     <p class="sub">Проверка паспорта — 4 900 ₽. Данные карты на сайте мы не принимаем: счёт и ссылку на оплату вы получите письмом, оплатить можно картой или по реквизитам. Договор и чек — тем же письмом.</p>
-    <a class="cta" href="index.html#form">Оставить заявку на оплату</a>
+    <a class="cta" href="index.html#form" onclick="track('click_back_form')">Оставить заявку на оплату</a>
     <div class="cta-note">Заполните форму на главной — в ответном письме будет ссылка на оплату</div>
   </div>
   <section>
@@ -80,8 +80,8 @@
 </div>
 <div class="wrap"><footer>
   ПБ-Контроль &middot; Проверка и разработка паспортов безопасности химической продукции (ГОСТ 30333, ТР ЕАЭС 041/2017)<br>
-  ИП Гудев Роман &middot; ИНН 615007167949 &middot; <a href="mailto:rgudev@bk.ru">rgudev@bk.ru</a><br>
-  <a href="privacy.html">Политика обработки персональных данных</a>
+  ИП Гудев Роман &middot; ИНН 615007167949<br>
+  <a href="privacy.html" onclick="track('click_legal_privacy')">Политика обработки персональных данных</a>
 </footer></div>
 </body>
 </html>

@@ -59,20 +59,20 @@
 <script src="smoke.js"></script>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><nav class="top"><a href="./">Проверка паспорта</a><a href="new.html">Разработка паспорта</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="./" onclick="track('click_logo_home')">ПБ<span>-Контроль</span></a><nav class="top"><a href="./" onclick="track('click_nav_check')">Проверка паспорта</a><a href="new.html" onclick="track('click_nav_new')">Разработка паспорта</a></nav></div></header>
 <div class="wrap">
 
   <div class="hero">
     <h1>Заявка принята</h1>
     <p class="sub">Ответим в течение рабочего дня с адреса, указанного ниже. В ответном письме попросим файл паспорта, если вы его ещё не приложили, и пришлём счёт с договором, если решите заказать проверку.</p>
-    <a class="cta" href="./">Вернуться на главную</a>
+    <a class="cta" href="./" onclick="track('click_nav_check')">Вернуться на главную</a>
     <div class="cta-note">Письмо не пришло в течение рабочего дня? Напишите нам напрямую — адрес в подвале страницы</div>
   </div>
 </div>
 <div class="wrap"><footer>
   ПБ-Контроль &middot; Проверка и разработка паспортов безопасности химической продукции (ГОСТ 30333, ТР ЕАЭС 041/2017)<br>
-  ИП Гудев Роман &middot; ИНН 615007167949 &middot; <a href="mailto:rgudev@bk.ru">rgudev@bk.ru</a><br>
-  <a href="privacy.html">Политика обработки персональных данных</a>
+  ИП Гудев Роман &middot; ИНН 615007167949<br>
+  <a href="privacy.html" onclick="track('click_legal_privacy')">Политика обработки персональных данных</a>
 </footer></div>
 <!-- Единственный ловец цели «заявка отправлена».
      Работает с ЛЮБЫМ конструктором форм: в настройках формы включается

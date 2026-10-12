@@ -58,19 +58,19 @@
 <script src="smoke.js"></script>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="./">ПБ<span>-Контроль</span></a><nav class="top"><a href="./" >Проверка паспорта</a><a href="new.html">Разработка паспорта</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="./" onclick="track('click_logo_home')">ПБ<span>-Контроль</span></a><nav class="top"><a href="./" onclick="track('click_nav_check')">Проверка паспорта</a><a href="new.html" onclick="track('click_nav_new')">Разработка паспорта</a></nav></div></header>
 <div class="wrap">
 
   <section id="check">
     <h2>Проверка готового паспорта</h2>
-    <p class="price">Экспресс-проверка — <b>4 900 ₽</b> &middot; Переоформление по итогам проверки — от 12 000 ₽ &middot; <a href="#new">Разработка нового паспорта</a> — 14 900 ₽</p>
+    <p class="price">Экспресс-проверка — <b>4 900 ₽</b> &middot; Переоформление по итогам проверки — от 12 000 ₽ &middot; <a href="#new" onclick="track('click_anchor_new')">Разработка нового паспорта</a> — 14 900 ₽</p>
     <p class="cmp">Для сравнения: центры сертификации берут за разработку паспорта 14 000–15 000 ₽ и заявляют срок «от 14 рабочих дней». Сам документ мы делаем за сутки. И оговорим честно: если по вашей продукции нужна регистрация в реестре, её срок задаёт ведомство, а не мы, и в наши сутки он не входит.</p>
     <p style="margin-top:18px"><a class="cta ghost" href="pay.html" onclick="try{track('payment_click')}catch(e){}">Оплатить проверку</a></p>
   </section>
 
   <section id="new">
     <h2>Разработка нового паспорта</h2>
-    <p class="price">Разработка паспорта — <b>14 900 ₽</b> &middot; Второй и последующие паспорта на схожие рецептуры — 9 900 ₽ &middot; Проверка уже готового паспорта — <a href="#check">4 900 ₽</a></p>
+    <p class="price">Разработка паспорта — <b>14 900 ₽</b> &middot; Второй и последующие паспорта на схожие рецептуры — 9 900 ₽ &middot; Проверка уже готового паспорта — <a href="#check" onclick="track('click_anchor_check')">4 900 ₽</a></p>
 
     <h3>Регистрация в Регистре ПБ — отдельной строкой</h3>
     <p class="cmp">Не всей продукции она нужна; если нужна — вот действующие тарифы уполномоченного центра, чтобы вы сразу видели полную сумму (проверено на ciscenter.org 26.07.2026):</p>
@@ -88,8 +88,8 @@
 <script>try{track('price_view')}catch(e){}</script>
 <div class="wrap"><footer>
   ПБ-Контроль &middot; Проверка и разработка паспортов безопасности химической продукции (ГОСТ 30333, ТР ЕАЭС 041/2017)<br>
-  ИП Гудев Роман &middot; ИНН 615007167949 &middot; <a href="mailto:rgudev@bk.ru">rgudev@bk.ru</a><br>
-  <a href="new.html">Разработка нового паспорта</a> &middot; <a href="privacy.html">Политика обработки персональных данных</a>
+  ИП Гудев Роман &middot; ИНН 615007167949<br>
+  <a href="new.html" onclick="track('click_nav_new')">Разработка нового паспорта</a> &middot; <a href="privacy.html" onclick="track('click_legal_privacy')">Политика обработки персональных данных</a>
 </footer></div>
 </body>
 </html>
